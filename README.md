@@ -6,6 +6,7 @@ Este é um aplicativo de gerenciamento de documentos construído com React e Cha
 
 ## Funcionalidades
 
+- **Editar usuário logado**: Permite ao usuário editar o próprio perfil.
 - **Adicionar Documento**: Permite ao usuário adicionar novos documentos com nome e status.
 - **Editar Documento**: Possibilita a edição de documentos existentes.
 - **Excluir Documento**: O usuário pode remover documentos da lista.
