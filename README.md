@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# Desafio Municca
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+Este é um aplicativo de gerenciamento de documentos construído com React e Chakra UI. A aplicação permite adicionar, editar e excluir documentos, além de visualizar uma lista de todos os documentos gerenciados.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- **Adicionar Documento**: Permite ao usuário adicionar novos documentos com nome e status.
+- **Editar Documento**: Possibilita a edição de documentos existentes.
+- **Excluir Documento**: O usuário pode remover documentos da lista.
+- **Visualização de Documentos**: Exibe todos os documentos cadastrados em uma lista.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Requisitos
 
-- Configure the top-level `parserOptions` property like this:
+Para rodar a aplicação localmente, você precisa ter o seguinte instalado na sua máquina:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Node.js** (versão 14 ou superior)
+- **npm** (gerenciador de pacotes do Node.js)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Instalação
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone o repositório para a sua máquina:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ```bash
+   git clone https://github.com/seu-usuario/web-municca.git
+   ```
+
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd web-municca 
+    ```
+2. Instale as dependências do projeto:
+    ```bash
+    npm install
+    ```    
+
+### Rodando a aplicação
+Para iniciar o servidor de desenvolvimento com Vite, execute o seguinte comando:
+```bash
+npm run dev
+``` 
